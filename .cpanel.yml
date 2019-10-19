@@ -1,0 +1,6 @@
+---
+deployment:
+ tasks:
+ - export DEPLOYPATH=/home/steshiok.tar.gz/public_html/
+ - /bin/cp * $DEPLOYPATH
+ 
