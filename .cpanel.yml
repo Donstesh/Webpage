@@ -2,6 +2,18 @@
 deployment:
  tasks:
  - export DEPLOYPATH=/home/steshiok.tar.gz/public_html/
- - /bin/cp * $DEPLOYPATH
+ - /bin/cp -r * $DEPLOYPATH
  
  
+
+ #Copy the specific file to the destination from root:
+  #  - cp <file_name> $DEPLOYPATH
+
+#copy the specific file from source subfolder:
+    #- cp ./<sub_folder>/<file_name> $DEPLOYPATH
+
+#copy all from the root (note that this command will not copy hidden files or folders located in the root folder, such as ".git" or ".htaccess"):
+    #- cp -r * $DEPLOYPATH
+
+#copy all from sub folder root:
+    #- cp -r ./<sub_folder> $DEPLOYPATH
