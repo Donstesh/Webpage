@@ -1,7 +1,7 @@
 ---
 deployment:
  tasks:
- - export DEPLOYPATH=/home/steshiok.tar.gz/public_html/
+ - export DEPLOYPATH=/home/stephens/public_html/
  - /bin/cp -r * $DEPLOYPATH
  
  
